@@ -15,10 +15,11 @@ TARGET_BUILD_APERTURE_CAMERA := false
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_USES_MIUI_CAMERA := true
 TARGET_INCLUDES_MIUI_CAMERA := true
+TARGET_USES_PICO_GAPPS := true
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Build Type Flags
-EVO_BUILD_TYPE = DEVELOPMENT
+EVO_BUILD_TYPE := Fan-Edition
 
 # Inherit from alioth device
 $(call inherit-product, device/xiaomi/alioth/device.mk)
